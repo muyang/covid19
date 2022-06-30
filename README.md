@@ -65,6 +65,42 @@ $$\frac{dV}{dt}=pI-cV$$
 
 
 ---
+## 进度计划
+
+```mermaid
+gantt
+        dateFormat  YYYY-MM-DD
+        axisFormat   %b %d
+        title Covid-19讨论小组计划
+ 
+        section 文献
+        文献追踪                             :active,    des1, 2022-04-21,2022-07-31
+        略读                                :done,  des2, 2022-05-09, 21d
+        精读                                :activate， des3, 2022-05-23, 2022-07-04
+        文献综述                             :         des4, 2022-06-17, 2022-07-11
+ 
+        section 数据
+        历史数据整理                         :crit, done, 2022-03-16,2022-04-21
+        Johns Hopkins数据更新                :crit, active, 2022-05-21,2022-07-21
+        数据清洗与数据工程                    :crit, done, 2022-05-21,2022-06-26
+        *航空数据补充                         :after a1, 2022-07-10,2022-07-17
+ 
+        section 模型
+        个体模型                             :crit, done, 2022-05-31,2022-06-10
+        群体模型                             :crit, active, 2022-06-14,2022-07-03
+        个体/群体模型整合                     :crit, after, 2022-06-21,2022-07-10
+        参数率定                             :crit, after, 2022-07-10,2022-07-17
+        情景分析                             :crit, after, 2022-07-17,2022-07-24
+
+        section 文章
+        整理成文                             :after a1, 2022-07-04,2022-08-04
+
+ 
+
+```
+
+
+---
 ## REFERENCES
 [1] Du, Xiangjun, et al. "Evolution-informed forecasting of seasonal influenza A (H3N2)." Science translational medicine 9.413 (2017): eaan5325.
 [2] Mossong J, Hens N, Jit M, Beutels P, Auranen K, Mikolajczyk R, et al. (2008) Social Contacts and Mixing Patterns Relevant to the Spread of Infectious Diseases. PLoS Med 5(3): e74. https://doi.org/10.1371/journal.pmed.0050074
